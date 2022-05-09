@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Filterable Image Gallery </title>
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div id="side-menu" class="fas fa-bars"></div>   
+
+<div class="side-bar">
+   <h1 class="heading">filter images</h1>
+   <div class="box">
+      <h3 class="title">search image :</h3>
+      <input type="text" placeholder="search image..." id="search-box">
+   </div>
+   <div class="box">
+      <h3 class="title">category :</h3>
+      <div class="category">
+         <div class="btn active" data-category="all"> all </div>
+         <div class="btn" data-category="animal">animals</div>
+         <div class="btn" data-category="bird">birds</div>
+         <div class="btn" data-category="food">food</div>
+         <div class="btn" data-category="nature">nature</div>
+         <div class="btn" data-category="bts">BTS</div>
+         <div class="btn" data-category="cartoon">Cartoon</div>
+      </div>
+   </div>
+   <div class="box">
+      <h3 class="title">type :</h3>
+      <div class="type">
+         <div class="btn active" data-type="all">all type</div>
+         <div class="btn" data-type="jpg">jpg</div>
+         <div class="btn" data-type="png">png</div>
+      </div>
+   </div>
+   <div class="reset-btn"><div class="btn">reset all</div></div>
+</div>
+
+<div class="gallery">
+
+   <h1 class="heading">image gallery</h1>
+
+   <div class="image-container">
+      <img src="images/img-1.jpg" data-cat="animal" data-search="wlid animals" alt="">
+      <img src="images/img-2.jpg" data-cat="animal" data-search="Tiger" alt="">
+      <img src="images/img-3.jpg" data-cat="animal" data-search="zebra" alt="">
+      <img src="images/img-4.jpg" data-cat="animal" data-search="wlid animals" alt="">
+      <img src="images/img-5.jpg" data-cat="animal" data-search="wlid animals" alt="">
+      <img src="images/img-6.jpg" data-cat="bird" data-search="sparrow" alt="">
+      <img src="images/img-7.jpg" data-cat="bird" data-search="parrot" alt="">
+      <img src="images/img-8.jpg" data-cat="bird" data-search="sparrow" alt="">
+      <img src="images/img-9.jpg" data-cat="bird" data-search="sparrow" alt="">
+      <img src="images/img-10.jpg" data-cat="bird" data-search="peacock" alt="">
+      <img src="images/img-11.jpg" data-cat="food" data-search="food" alt="">
+      <img src="images/img-12.jpg" data-cat="food" data-search="juice drink" alt="">
+      <img src="images/img-13.jpg" data-cat="food" data-search="food" alt="">
+      <img src="images/img-14.jpg" data-cat="food" data-search="coffee" alt="">
+      <img src="images/img-15.png" data-cat="food" data-search="food burger" alt="">
+      <img src="images/img-16.jpg" data-cat="nature" data-search="trees" alt="">
+      <img src="images/img-17.jpg" data-cat="nature" data-search="sea" alt="">
+      <img src="images/img-18.jpg" data-cat="nature" data-search="trees" alt="">
+      <img src="images/img-19.jpg" data-cat="nature" data-search="nature flower" alt="">
+      <img src="images/img-20.jpg" data-cat="nature" data-search="Nature flower" alt="">
+      <img src="images/img-21.jpg" data-cat="bts" data-search="band" alt="">
+      <img src="images/img-22.jpg" data-cat="bts" data-search="band" alt="">
+      <img src="images/img-23.jpg" data-cat="bts" data-search="band" alt="">
+      <img src="images/img-24.jpg" data-cat="bts" data-search="band" alt="">
+      <img src="images/img-25.jpg" data-cat="bts" data-search="band" alt="">
+      <img src="images/img-26.jpg" data-cat="bts" data-search="band" alt="">
+      <img src="images/img-27.jpg" data-cat="bts" data-search="band" alt="">
+      <img src="images/img-28.jpg" data-cat="cartoon" data-search="animation" alt="">
+      <img src="images/img-29.jpg" data-cat="cartoon" data-search="animation" alt="">
+      <img src="images/img-30.jpg" data-cat="cartoon" data-search="animation" alt="">
+      <img src="images/img-31.png" data-cat="cartoon" data-search="animation" alt="">
+      <img src="images/img-32.png" data-cat="cartoon" data-search="animation" alt="">
+      <img src="images/img-33.jpg" data-cat="cartoon" data-search="animation" alt="">
+      <img src="images/img-34.jpg" data-cat="cartoon" data-search="animation" alt="">
+      <img src="images/img-35.jpg" data-cat="cartoon" data-search="animation" alt="">
+   </div>
+
+</div>
+
+<div class="image-popup">
+   <img src="" alt="">
+</div>
+
+
+<script src="app.js"></script>
+
+</body>
+</html>
